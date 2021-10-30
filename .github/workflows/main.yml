@@ -1,11 +1,9 @@
 name: build-pdf
-
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -17,4 +15,5 @@ jobs:
           root_file: src/cv.tex
       - uses: actions/upload-artifact@v2
         with:
+          name: pdf
           path: cv.pdf
