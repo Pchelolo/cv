@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@master
+        uses: xu-cheng/latex-action@v2
         with:
           root_file: src/cv.tex
       - uses: actions/upload-artifact@v2
