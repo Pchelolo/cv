@@ -15,3 +15,6 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: src/cv.tex
+      - uses: actions/upload-artifact@v2
+        with:
+          path: cv.pdf
